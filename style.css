@@ -1,3 +1,52 @@
-*{
-    background-color: red;
-}
+/* p::after{
+  content:" ..."
+} */
+/* p::before{
+  content:".."
+} */
+
+ p::selection{
+  color:red;
+  background-color:black;
+} 
+
+/* [attribute]
+[attribute=value]
+[attribute~=value]
+[attribute|=value]
+[attribute^=value]
+[attribute$=value]
+[attribute*=value] */
+
+
+input[type*="p"]{
+    background-color:black;
+    color:white;
+  }
+  
+  a[href$=".gov"]{
+    color:red;
+  }
+  
+  a[href^="https"]{
+    color:green;
+  }
+  
+  div[class~="abc"]{
+    color:orange;
+  }
+  
+  /* test-abc ac*/
+  /* test fadasfa  no accepted */ 
+  div[class|="test"]{
+    color:green
+  }
+  
+  
+  #color{
+    color:#FF0000;
+  /*   background:rgb(0,255,0); */
+    background:hsla(245, 100%, 54%, 0.58);
+  }
+  
+  
